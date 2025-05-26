@@ -34,7 +34,7 @@ async function checkForConflicts(date: Date, duration: number, excludeId?: strin
   return existingAppointments.length > 0;
 }
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   try {
     const appointments = await prisma.appointment.findMany({
       orderBy: { date: 'asc' },
