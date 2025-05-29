@@ -1,5 +1,5 @@
-import Form from './form';
-import List from './list';
+import Form from '../components/form';
+import List from '../components/list';
 
 export default function AppointmentsPage() {
   return (
